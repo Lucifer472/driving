@@ -99,7 +99,7 @@
     text-decoration: underline;
   }
 
-  .blog-styles h1
+  .blog-styles h1{
     @apply text-2xl sm:text-3xl md:text-4xl leading-[1.8em] font-[800];
   }
 
