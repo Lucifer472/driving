@@ -47,7 +47,7 @@ const BlogMain = ({ blog, link }: { blog: blogUser; link: string }) => {
             </div>
             <Link
               href={`/author/${blog?.author}`}
-              className="text-sm sm:text-md md:text-lg hover:underline"
+              className="text-xs sm:text-sm hover:underline"
             >
               {blog?.Author?.name}
             </Link>

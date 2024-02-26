@@ -108,20 +108,20 @@ const page = async ({ params }: { params: { slug: string } }) => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLDBredCrum) }}
       ></script>
       <div className="w-full padding border-b border-gray-300/30 flex flex-wrap items-center justify-start">
-        <Link href={"/"} className="text-sm text-gray-500 underline">
+        <Link href={"/"} className="text-xs text-gray-500 underline">
           Home
         </Link>
         <span className="text-xs mx-1">/</span>
         <Link
           href={categoryLink}
-          className="text-sm text-gray-500 underline capitalize"
+          className="text-xs text-gray-500 underline capitalize"
         >
           {blog?.category}
         </Link>
         <span className="text-xs mx-1">/</span>
         <Link
           href={`/blog/${params.slug}`}
-          className="text-sm text-gray-500 underline"
+          className="text-xs text-gray-500 underline"
         >
           {blog?.title}
         </Link>

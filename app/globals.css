@@ -79,7 +79,6 @@
 }
 
 /* Extra Rules */
-
 @layer components {
   .padding {
     @apply px-2 py-3 md:px-3 md:py-4 lg:px-4 lg:py-5;
@@ -88,10 +87,10 @@
   /* blogs class */
 
   .blog-styles p {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     color: black;
     font-weight: 400;
-    margin: .2em 0;
+    margin: 0.1em 0;
   }
 
   .blog-styles a {
@@ -99,7 +98,7 @@
     text-decoration: underline;
   }
 
-  .blog-styles h1{
+  .blog-styles h1 {
     @apply text-2xl sm:text-3xl md:text-4xl mt-1 mb-1 font-[800];
   }
 
@@ -125,24 +124,24 @@
 
   .blog-styles ul,
   .blog-styles ol {
-    margin: .5em 0;
-    padding: 0 .7em;
+    margin: 0.3em 0;
+    padding: 0 0.4em;
   }
 
   .blog-styles ol li {
     list-style: decimal;
-    margin: .5em 0;
-    font-size: 1rem;
-    line-height: 1.5em;
+    margin: 0.2em 0;
+    font-size: 0.9rem;
+    line-height: 1em;
     font-weight: 300;
     color: rgb(43, 53, 75);
   }
 
   .blog-styles ul li {
     list-style: disc;
-    margin: .5em 0;
-    font-size: 1rem;
-    line-height: 1.5em;
+    margin: 0.2em 0;
+    font-size: 0.9rem;
+    line-height: 1em;
     font-weight: 300;
     color: rgb(43, 53, 75);
   }
@@ -158,14 +157,14 @@
 
   .blog-styles img {
     object-fit: cover;
-    margin: .6em auto;
+    margin: 0.2em auto;
   }
 
   .blog-styles blockquote {
-    padding: .5em;
-    margin: .5em 0;
+    padding: 0.2em;
+    margin: 0.2em 0;
     border-left: 2px solid black;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     font-style: italic;
     background-color: rgb(241, 241, 241);
@@ -180,7 +179,7 @@
   }
 
   .blog-styles table th {
-    padding: .6em;
+    padding: 0.2em;
     text-align: left;
     font-weight: 700;
     border: 1px solid black;
@@ -189,7 +188,7 @@
   }
 
   .blog-styles table td {
-    padding: .5em;
+    padding: 0.2em;
     text-align: left;
     border: 1px solid black;
   }

@@ -28,10 +28,10 @@ const BlogLink = ({ l }: { l: authorBlog }) => {
             {textSlice(l.title, 45)}
           </h2>
           <div className="w-full flex justify-between pb-2">
-            <span className="text-xs sm:text-sm md:text-base font-extralight text-gray-500">
+            <span className="text-[8px] sm:text-sm md:text-base font-extralight text-gray-500">
               {`By ${l.Author.name}`}
             </span>
-            <time className="text-xs sm:text-sm md:text-base font-extralight text-gray-500">
+            <time className="text-[8px] sm:text-sm md:text-base font-extralight text-gray-500">
               {convertDateFormat(l.updatedAt)}
             </time>
           </div>

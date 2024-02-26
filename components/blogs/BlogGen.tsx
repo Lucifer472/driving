@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const BlogGen = ({ blog }: { blog: any }) => {
   return (
-    <div className="padding flex flex-col items-start justify-center gap-4 max-w-full xxs:max-w-[400px] xs:max-w-[500px] sm:max-[600px] md:max-w-[750px] mx-auto prose blog-styles ">
+    <div className="padding flex flex-col items-start justify-center gap-y-1 max-w-full xxs:max-w-[400px] xs:max-w-[500px] sm:max-[600px] md:max-w-[750px] mx-auto prose blog-styles ">
       {
         // @ts-ignore
         blog.map((b: any, index) => {

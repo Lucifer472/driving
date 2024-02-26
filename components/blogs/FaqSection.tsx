@@ -44,18 +44,16 @@ const FaqSection = ({ faq }: { faq: any }) => {
       ></script>
       <div className="global-container bg-white rounded-md px-4 py-2 flex flex-col w-full">
         <div className="w-full py-2 flex items-start justify-start border-b-2 border-gray-500">
-          <h1 className="text-xl font-medium text-black">
-            Faq Section for Blogs
-          </h1>
+          <h1 className="font-medium text-black">Faq Section for Blogs</h1>
         </div>
         <div className="max-w-[750px] mx-auto w-full">
           {faqs.map((f: any, index: number) => (
             <Accordion type="single" collapsible key={f.id}>
               <AccordionItem value={`item-${index + 1}`}>
-                <AccordionTrigger className="text-lg sm:text-xl">
+                <AccordionTrigger className="text-sm text-left sm:text-xl">
                   <span dangerouslySetInnerHTML={{ __html: f.question }}></span>
                 </AccordionTrigger>
-                <AccordionContent className="text-base sm:text-lg">
+                <AccordionContent className="text-sm sm:text-lg">
                   <span dangerouslySetInnerHTML={{ __html: f.answer }}></span>
                 </AccordionContent>
               </AccordionItem>

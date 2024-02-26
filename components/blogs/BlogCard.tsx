@@ -23,10 +23,10 @@ const BlogCard = ({ src, alt, title, author, date, slug }: BlogCardProps) => {
             {textSlice(title, 50)}
           </h3>
           <div className="flex justify-between w-full flex-1">
-            <span className="text-xs sm:text-sm md:text-base text-gray-500 font-extralight">
+            <span className="text-[8px] sm:text-sm md:text-base text-gray-500 font-extralight">
               {`By ${author}`}
             </span>
-            <time className="text-xs sm:text-sm md:text-base text-gray-500 font-extralight">
+            <time className="text-[8px] sm:text-sm md:text-base text-gray-500 font-extralight">
               {convertDateFormat(date)}
             </time>
           </div>

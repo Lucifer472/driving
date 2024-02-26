@@ -58,7 +58,7 @@ const BlogListing = ({
                       loading="eager"
                     />
                   </div>
-                  <div className="px-2 md:px-6 py-4 flex flex-col gap-6">
+                  <div className="px-2 md:px-6 py-4 flex flex-col gap-2">
                     <h1 className="text-lg sm:text-xl md:text-2xl font-semibold text-left hover:underline">
                       {textSlice(FirstBlog.title, 80)}
                     </h1>
@@ -91,7 +91,7 @@ const BlogListing = ({
                       loading="eager"
                     />
                   </div>
-                  <div className="px-2 md:px-6 py-4 flex flex-col gap-6">
+                  <div className="px-2 md:px-6 py-4 flex flex-col gap-2">
                     <h1 className="text-lg sm:text-xl md:text-2xl font-semibold text-left hover:underline">
                       {textSlice(FirstBlog.title, 80)}
                     </h1>
