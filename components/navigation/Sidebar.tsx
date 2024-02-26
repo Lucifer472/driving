@@ -14,8 +14,8 @@ const Sidebar = () => {
       )}
     >
       <SidebarIcon
-        width={30}
-        height={30}
+        width={20}
+        height={20}
         className="cursor-pointer"
         onClick={sidebarModal.onOpen}
       />

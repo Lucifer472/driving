@@ -1,5 +1,3 @@
-import Image from "next/image";
-import logo from "@/public/asset/logo.webp";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { title } from "@/constant";
@@ -24,10 +22,7 @@ const Navbar = () => {
     <header className="h-16 md:h-20 w-full bg-white fixed top-0 border-b border-gray-100 shadow-sm z-50">
       <nav className="flex items-center justify-between w-full h-full relative global-container ">
         <Link href={"/"} className="flex items-center gap-2">
-          <Image src={logo} width={50} alt="Logo" />
-          <h1 className="hidden sm:block text-xl font-medium text-black">
-            {title}
-          </h1>
+          <h1 className="text-xl font-medium text-black">{title}</h1>
         </Link>
         <div className="flex-1 justify-center items-center  gap-4 hidden lg:flex">
           <DesktopMenu />

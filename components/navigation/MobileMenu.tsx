@@ -2,13 +2,18 @@
 
 import { useState } from "react";
 import Link from "next/link";
+
 import { cn } from "@/lib/utils";
 import { driving, about, category } from "@/constant";
 import { School, Store } from "lucide-react";
+import useSideBarModal from "./SidebarModal";
 
 const MobileMenu = () => {
   const [menu, setMenu] = useState<boolean>(false);
   const [menu2, setMenu2] = useState<boolean>(false);
+
+  const onClose = useSideBarModal((set) => set.onClose);
+
   return (
     <div className="max-w-full w-full flex flex-col items-start justify-start">
       <div
@@ -26,6 +31,7 @@ const MobileMenu = () => {
       >
         {driving.labels.map((l, index) => (
           <Link
+            onClick={onClose}
             key={l}
             href={`/driving/${driving.links[index]}`}
             className="px-4 py-2 w-full text-lg border-l border-slate-100 hover:border-sky-500 hover:bg-sky-100 transition-all cursor-pointer"
@@ -38,6 +44,7 @@ const MobileMenu = () => {
         const Icon = category.icons[index];
         return (
           <Link
+            onClick={onClose}
             key={l}
             href={`${category.links[index]}/1`}
             className="px-4 py-2 w-full text-lg border-l border-slate-100 hover:border-sky-500 hover:bg-sky-100 transition-all flex items-center gap-2"
@@ -62,6 +69,7 @@ const MobileMenu = () => {
       >
         {about.labels.map((l, index) => (
           <Link
+            onClick={onClose}
             key={l}
             href={about.links[index]}
             className="px-4 py-2 w-full text-lg border-l border-slate-100 hover:border-sky-500 hover:bg-sky-100 transition-all cursor-pointer"
