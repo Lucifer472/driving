@@ -122,7 +122,7 @@ export default async function Home() {
       <div className="global-container flex flex-col gap-4 items-center justify-start bg-white px-4 py-2">
         <BlogListing
           mainTitle={driving.labels[1]}
-          subTitle="Featured Seaction"
+          subTitle="Featured Section"
           blogData={usaBlogData as any}
         />
         <MainBlogShowcase
@@ -132,14 +132,9 @@ export default async function Home() {
         />
         <BlogListing
           mainTitle={driving.labels[0]}
-          subTitle="Featured Seaction"
+          subTitle="Featured Section"
           blogData={canadaBlogData as any}
           reversed
-        />
-        <MainBlogShowcase
-          title={category.labels[1]}
-          link={category.links[1]}
-          blogData={collegueNewData as any}
         />
         <Faq />
         <div className="flex flex-col w-full border-b-4 border-sky-300 py-4">
