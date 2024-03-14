@@ -85,12 +85,12 @@
   }
 
   /* blogs class */
-
   .blog-styles p {
-    font-size: 0.8rem;
+    @apply text-base sm:text-lg;
     color: black;
     font-weight: 400;
-    margin: 0.1em 0;
+    margin: 0.5em 0;
+    text-align: justify;
   }
 
   .blog-styles a {
@@ -129,19 +129,19 @@
   }
 
   .blog-styles ol li {
+    @apply text-base sm:text-lg;
     list-style: decimal;
-    margin: 0.2em 0;
-    font-size: 0.9rem;
-    line-height: 1em;
+    margin: 0.6em 0;
+    line-height: 1.75;
     font-weight: 300;
     color: rgb(43, 53, 75);
   }
 
   .blog-styles ul li {
+    @apply text-base sm:text-lg;
     list-style: disc;
-    margin: 0.2em 0;
-    font-size: 0.9rem;
-    line-height: 1em;
+    margin: 0.6em 0;
+    line-height: 1.75;
     font-weight: 300;
     color: rgb(43, 53, 75);
   }
